@@ -8,19 +8,19 @@ import com.example.demo.service.StudentService;
 
 import org. springframework.stereotype.Service;
 
-    @Service
-    public class ServiceImplement implements StudentService {
+@Service
+public class ServiceImplement implements StudentService {
 
     @Autowired
     StudentRepository repo;
 
     @Override
-    public Student createData(Student stu) {
+    public Student createDAta(Student stu) {
         return repo.save(stu);
     }
 
     @Override
-    public List<Student> fetchRecord(){
+    public List<Student> fetchDAta(){
         return repo.findAll();
     }
 

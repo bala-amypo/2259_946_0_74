@@ -19,7 +19,7 @@ public class StudentController {
     }
 
     @GetMapping("/fetchrecord")
-    public List<Student>fetchData(){
+    public List<Student> fetchData(){
         return data.fetchDAta();
     }
 }

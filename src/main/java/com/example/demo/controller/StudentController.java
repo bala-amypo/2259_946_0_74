@@ -22,4 +22,8 @@ public class StudentController {
     public List<Student> fetchData(){
         return data.fetchData();
     }
+    @GetMapping("/fetchDataById/{id}")
+    public Optional fetchDataById(@PathVariable int id){
+        return data.fetchDataById(id);
+    }
 }

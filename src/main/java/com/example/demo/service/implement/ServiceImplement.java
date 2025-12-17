@@ -25,4 +25,8 @@ public class ServiceImplement implements StudentService {
         return repo.findAll();
     }
 
+    @Override
+    public Optional fetchDataById(int id){
+        return repo.findById(3)
+    }
 }

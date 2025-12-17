@@ -1,11 +1,10 @@
-package com.example.demo.service;
+package com.example.demo.repository;
 
-import java.util.*;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
 import com.example.demo.entity.Student;
 
-public interface StudentService {
+public interface StudentRepository extends JpaRepository<Student,Integer>{
 
-    Student createData(Student stu);
-    List<Student> fetchData();
-    Optional fetchDataById(int id);
 }

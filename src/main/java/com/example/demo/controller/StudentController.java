@@ -15,11 +15,11 @@ public class StudentController {
 
     @PostMapping("/createrecord")
     public Student createData(@RequestBody Student stu){
-        return data.createDAta(stu);
+        return data.createData(stu);
     }
 
     @GetMapping("/fetchrecord")
     public List<Student> fetchData(){
-        return data.fetchDAta();
+        return data.fetchData();
     }
 }

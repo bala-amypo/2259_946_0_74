@@ -1,7 +1,7 @@
 package com.example.demo.service.implement;
 
 import org. springframework.beans. factory. annotation. Autowired;
-import java.util.List;
+import java.util.*;
 
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
@@ -27,6 +27,6 @@ public class ServiceImplement implements StudentService {
 
     @Override
     public Optional fetchDataById(int id){
-        return repo.findById(3)
+        return repo.findById(3);
     }
 }

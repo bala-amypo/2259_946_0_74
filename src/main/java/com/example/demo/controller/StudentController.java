@@ -27,8 +27,8 @@ public class StudentController {
         return data.fetchDataById(id);
     }
     @PutMapping("/updatedata")
-    public  updateData(@PathVariable int id,@RequestBody Student stu){
-        data.set(id);
+    public String updateData(@PathVariable int id,@RequestBody Student stu){
+        stu.setId(id);
         data.createData(stu);
     }
 }

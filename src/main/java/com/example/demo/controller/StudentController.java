@@ -30,5 +30,6 @@ public class StudentController {
     public String updateData(@PathVariable int id,@RequestBody Student stu){
         stu.setId(id);
         data.createData(stu);
+        return "Updated Successfully";
     }
 }
